@@ -26,7 +26,7 @@ public class VenueDao {
     try {
         // Initialize the database connection
         this.con = DatabaseConnection.createConnection();
-        createVenueTable();
+        //createVenueTable();
         if (this.con != null && !this.con.isClosed()) {
             JOptionPane.showMessageDialog(null, "Connection Established");
         } else {

@@ -125,7 +125,7 @@ public class TimeTableDao {
         try {
             // Initialize the database connection
             this.con = DatabaseConnection.createConnection();
-            createTimetableTable();
+            //createTimetableTable();
             if (this.con != null && !this.con.isClosed()) {
                 JOptionPane.showMessageDialog(null, "Connection Established");
             } else {

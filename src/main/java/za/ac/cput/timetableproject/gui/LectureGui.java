@@ -145,10 +145,10 @@ public class LectureGui extends JPanel {
                         tableModel.addRow(new Object[]{idd, Lname, Sname, Linitials});
                          list = dao.readLecture();
 
-                        for (Lecture dd : list) {
-
-                            tableModel.addRow(new Object[]{dd.getLectureID(), dd.getLectureName(), dd.getLectureSurname(), dd.getLectureIntials()});
-                        }
+//                        for (Lecture dd : list) {
+//
+//                            tableModel.addRow(new Object[]{dd.getLectureID(), dd.getLectureName(), dd.getLectureSurname(), dd.getLectureIntials()});
+//                        }
                          
                         JOptionPane.showMessageDialog(null, "Lecture successfully added");
 

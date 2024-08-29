@@ -218,5 +218,36 @@ public class LectureDao {
         }
         return false;
     }
+    
+    public ArrayList<String> lecture(){
+        
+        ArrayList<String> list = new ArrayList();
+        
+        String sql = "Select * FROM Lecture";
+        
+        try{
+            
+            ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            
+            if(rs != null){
+                
+                while(rs.next()){
+                    
+                    int id = rs.getInt(1);
+                    String name = rs.getString(2);
+                    String surname = rs.getString(3);
+                    String inti = rs.getString(4);
+                    
+                    list.add(name +" "+surname);
+                }
+                
+            }
+                    
+        }catch(Exception k){
+            k.getMessage();
+        }
+        return list;
+    }
 
 }

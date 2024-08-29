@@ -26,7 +26,7 @@ public class SubjectDao {
         try {
             if (this.con == null || this.con.isClosed()) {  // Check if the connection is null or closed
                 this.con = DatabaseConnection.createConnection();
-                createSubjectTable();
+                //createSubjectTable();
                 JOptionPane.showMessageDialog(null, "Connection Established");
             }
         } catch (SQLException k) {
