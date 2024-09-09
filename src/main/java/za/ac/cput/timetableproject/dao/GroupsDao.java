@@ -643,7 +643,7 @@ public class GroupsDao {
         }
     }
     
-    public ArrayList<String> Groups(){
+    public ArrayList<String> getAllGroups(){
         ArrayList<String> list = new ArrayList();
         String sql = "SELECT * FROM Groups";
         

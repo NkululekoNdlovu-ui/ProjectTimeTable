@@ -225,7 +225,7 @@ public class VenueDao {
     }
     return false;
 }
-     public ArrayList<String> Venues() {
+     public ArrayList<String> getAllVenues() {
         ArrayList<String> list = new ArrayList<>();
         String sql = "SELECT * FROM Venue";  // Adjust the SQL if needed
 

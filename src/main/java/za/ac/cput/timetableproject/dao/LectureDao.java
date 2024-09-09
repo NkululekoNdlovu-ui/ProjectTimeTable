@@ -219,7 +219,7 @@ public class LectureDao {
         return false;
     }
     
-    public ArrayList<String> lecture(){
+    public ArrayList<String> getAllLecturers(){
         
         ArrayList<String> list = new ArrayList();
         
